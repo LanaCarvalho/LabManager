@@ -25,11 +25,11 @@ if(modelName == "Computer")
     {
         var id = Convert.ToInt32(args[2]);
         var ram = args[3];
-        var processador = args[4];
+        var processor = args[4];
         Console.WriteLine("New Computer");
-        Console.WriteLine("{0}, {1}, {2}", id, ram, processador);
+        Console.WriteLine("{0}, {1}, {2}", id, ram, processor);
 
-        var computer = new Computer(id, ram, processador);
+        var computer = new Computer(id, ram, processor);
         computerRepository.Save(computer);
     }
 
@@ -53,8 +53,8 @@ if(modelName == "Computer")
     {
         var id = Convert.ToInt32(args[2]);
         var ram = args[3];
-        var processador = args[4];
-        var computer = new Computer(id, ram, processador);
+        var processor = args[4];
+        var computer = new Computer(id, ram, processor);
 
         computerRepository.Update(computer);
     }
