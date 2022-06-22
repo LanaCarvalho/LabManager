@@ -2,5 +2,5 @@ namespace LabManager.Database;
 
 class DatabaseConfig
 {
-    public string ConnectionString { get => "Data Source=databasee.db";}
+    public string ConnectionString { get => "Data Source=database.db";}
 }
